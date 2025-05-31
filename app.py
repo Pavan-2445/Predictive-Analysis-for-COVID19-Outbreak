@@ -130,4 +130,4 @@ if st.button("Predict for Next 30 Days"):
         
         st.line_chart(result_df.set_index('Date')['Predicted Cases'])
         
-        st.line_chart(result_df.set_index('Date')[['Incidence Rate', 'Mortality Rate (%)']])
+        st.line_chart(result_df.set_index('Date')[['Incidence Rate (per 100k)', 'Mortality Rate (%)']])
